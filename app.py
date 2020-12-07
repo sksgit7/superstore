@@ -9,7 +9,8 @@ st.title('Store Performance Analysis')
 #load dataset
 #@st.cache
 def data():
-	df=pd.read_excel('Week1-Superstore.xlsx',sheet_name='Superstore-Retail-Sep-2020')
+	#df=pd.read_excel('Week1-Superstore.xlsx',sheet_name='Superstore-Retail-Sep-2020')
+	df= pd.read_csv('Week1-Superstore.csv',sep='\t')
 	df['Shipdate'] =  pd.to_datetime(df['ShipDate'], format='%Y-%m-%d')
 	df['year']=pd.DatetimeIndex(df['ShipDate']).year
 	df['month']=pd.DatetimeIndex(df['ShipDate']).month
