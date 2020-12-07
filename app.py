@@ -7,10 +7,10 @@ import calendar
 st.title('Store Performance Analysis')
 
 #load dataset
-@st.cache
+#@st.cache
 def data():
 	df=pd.read_excel('Week1-Superstore.xlsx',sheet_name='Superstore-Retail-Sep-2020')
-	df['Shipdate'] =  pd.to_datetime(df['ShipDate'], format='%Y%b%d')
+	df['Shipdate'] =  pd.to_datetime(df['ShipDate'], format='%Y-%m-%d')
 	df['year']=pd.DatetimeIndex(df['ShipDate']).year
 	df['month']=pd.DatetimeIndex(df['ShipDate']).month
 	df[df['year']!=2020]
