@@ -3,7 +3,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import calendar
-from PIL import Image
 
 st.title('Store Performance Analysis')
 
