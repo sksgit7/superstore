@@ -7,5 +7,5 @@
 Python file for streamlit (web app) for analysis of the superstore data.
 It uses the superstore csv file.
 
-# superstore
+#### superstore
 streamlit data analysis heroku
